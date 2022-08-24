@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+.lst {
+    list-style-type: none;
+}
+.flex {
+    display: flex;
+}
+.promotionsNews {
+    background: linear-gradient(lightblue,white);
+}
+.promotions {
+    background: linear-gradient(whitesmoke,lightblue);
+}
+.menu {
+    background-color: white !important;
+    border-radius: 15px;
+}
+.image img {
+    width: 100%;
+    margin: auto;
+}
+.image > a {
+    padding: 1.5rem;
+}
+
+ul.service {
+    justify-content: space-between;
+}
+
+ul.service > li {
+    margin: auto;
+}
+
+ul.service > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0.8rem;
+    color: rgb(0, 81, 255);
+    transition: all 0.8s;
+    border-radius: 15px;
+}
+
+ul.service > li > a:hover {
+    color: white;
+    background-color: lightblue;
+}
+
+.search:first-child > a > i {
+    color: rgb(0, 81, 255);
+}
+h1 {
+    color: darkblue;
+}
+.news {
+    height: 500px;
+    width: auto;
+    align-items: center;
+}
+.news .left {
+    text-align: center;
+}
+.left img {
+    border-radius: 15px;
+}
+.left a {
+    text-decoration: none;
+    color: black;
+}
+.news div {
+    width: 50%;
+}
+.newsItem {
+    margin: 1rem;
+}
+.newsItem img {
+    width: auto;
+    height: 150px;
+    border-radius: 15px;
+}
+.newsItem h2 {
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+.line {
+    margin: 1rem;
+    border-top: 2px blue solid;
+}
+.search {
+    display: inline;
+    margin-left: auto;
+}
+.search > input {
+    width: 15rem;
+    height: 1.5rem;
+}
+div.tags {
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.tag {
+    background-color: white;
+    margin: 1%;
+    width: 23%;
+    border: 2px solid lightblue;
+    border-radius: 0 15px;
+    overflow: hidden;
+}
+div.tag div div {
+    background-color: darkblue;
+}
+div.tag  img {
+    width: 100%;
+    transition: transform .5s;
+}
+div.tag  img:hover {
+    transform: scale(0.9);
+    border-radius: 15px;
+}
+footer {
+    margin-top: 5rem;
+    border-top: 2px lightblue;
+}
+div.foot {
+    text-align: center;
+}
+div.foot > div {
+    border-top: 2px lightblue solid;
+    justify-content: center;
+    align-items: center;
+}
+div.foot > button {
+    border: 2px darkblue solid;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+div.foot > button:hover {
+    background-color: lightblue;
+    color: white;
+}

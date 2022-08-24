@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="javascript/exchange.js"></script>
+    <link rel="stylesheet" href="css/exchange.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu flex">
+            <div class="image"><a href="#"><img src="images/logo.png" alt="logoImg"></a></div>
+            <ul class="service lst flex">
+                <li><a href="#"><i class="fa-solid fa-user"></i> DỊCH VỤ <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-gift"></i> ƯU ĐÃI <i class="fa-solid fa-angle-down"></i></li></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-newspaper"></i> TIN TỨC <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-wrench"></i> CÔNG CỤ <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-address-book"></i> LIÊN HỆ <i
+                            class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+            <ul class="search lst flex">
+                <li class="searchIcon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><input type="text" placeholder="Tìm kiếm" id="searchbar"></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div></div>
+        <table class="exchangeBox">
+            <tr>
+                <td>Số tiền</td>
+                <td><input type="number" id="stId" /></td>
+                <td>(VNĐ)</td>
+            </tr>
+            <tr>
+                <td>Đơn vị</td>
+                <td>
+                    <select id="dvId">
+                        <option value="eur">EUR</option>
+                        <option value="usd">USD</option>
+                        <option value="aud">AUD</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3" id="kq2">...</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="button" value="Đổi tiền" onclick="doiTien()" />
+                </td>
+            </tr>
+        </table>
+        <table class="exchangeTable">
+            <tr>
+                <td>Quốc Gia</td>
+                <td>Tỷ giá(mỗi 1000vnd)</td>
+                
+            <tr>
+                <td>EURO</td>
+                <td>0.03846</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>0.04545</td>
+            </tr>
+            <tr>
+                <td>AUS</td>
+                <td>0.0625</td>
+            </tr>
+                <td>EURO</td>
+                <td>0.03846</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>0.04545</td>
+            </tr>
+            <tr>
+                <td>AUS</td>
+                <td>0.0625</td>
+            </tr>
+                <td>EURO</td>
+                <td>0.03846</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>0.04545</td>
+            </tr>
+            <tr>
+                <td>AUS</td>
+                <td>0.0625</td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <div class="foot">
+            <button onclick="scroll_to_top()">
+                <i class="fa-solid fa-angles-up"></i>
+            </button>
+            <div class="flex">
+                <img src="images/logo.png" alt="logo">
+                <div>Copyright <i class="fa-solid fa-copyright"></i> TuBank. All right reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

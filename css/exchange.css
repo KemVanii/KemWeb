@@ -1,0 +1,123 @@
+.flex {
+    display: flex;
+}
+
+.lst {
+    list-style-type: none;
+}
+
+body {
+    background: linear-gradient(rgb(76, 65, 236), white);
+    background-repeat: no-repeat;
+}
+
+.menu {
+    background-color: white;
+    border-radius: 0px 15px;
+    padding: 5px;
+}
+
+.image img {
+    width: 100%;
+    margin: auto;
+}
+.image > a {
+    padding: 1.5rem;
+}
+
+ul.service {
+    justify-content: space-between;
+}
+
+ul.service > li {
+    margin: auto;
+}
+
+ul.service > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0.8rem;
+    color: rgb(0, 81, 255);
+    transition: all 0.8s;
+    border-radius: 15px;
+}
+
+ul.service > li > a:hover {
+    color: white;
+    background-color: lightblue;
+}
+
+ul.search {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.search:first-child > a > i {
+    color: rgb(0, 81, 255);
+}
+
+.serviceUi {
+    width: 50%;
+}
+
+div.serviceItem {
+    width: 20%;
+}
+
+div.serviceItem img {
+    width: 100%;
+}
+
+.exchangeBox {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 1.5rem 5rem;
+    margin-top: 5rem;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.exchangeTable {
+    background-color: rgb(177, 207, 218);
+    width: 100%;
+}
+
+.exchangeTable td {
+    background-color: white;
+}
+
+.exchangeTable, .exchangeTable td {
+    margin: 1.5rem auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.exchangeTable tr td {
+    padding: 1rem;
+}
+footer {
+    margin-top: 5rem;
+    border-top: 2px lightblue;
+}
+div.foot {
+    text-align: center;
+}
+div.foot > div {
+    border-top: 2px lightblue solid;
+    justify-content: center;
+    align-items: center;
+}
+div.foot > button {
+    border: 2px darkblue solid;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+div.foot > button:hover {
+    background-color: lightblue;
+    color: white;
+}

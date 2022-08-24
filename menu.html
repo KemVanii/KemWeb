@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="javascript/slider.js"></script>
+    <script src="javascript/uiMenu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <div class="menu flex">
+            <div class="image"><a href="#"><img src="images/logo.png" alt="logoImg"></a></div>
+            <ul class="service lst flex">
+                <li><a href="#"><i class="fa-solid fa-user"></i> DỊCH VỤ <i class="fa-solid fa-angle-down"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-gift"></i> ƯU ĐÃI <i class="fa-solid fa-angle-down"></i></li></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-newspaper"></i> TIN TỨC <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-wrench"></i> CÔNG CỤ <i class="fa-solid fa-angle-down"></i></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-address-book"></i> LIÊN HỆ <i
+                            class="fa-solid fa-angle-down"></i></a></li>
+            </ul>
+            <ul class="search lst flex">
+                <li class="searchIcon"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><input type="text" placeholder="Tìm kiếm" id="searchbar"></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="reward slider">
+
+            <a href="#0" class="next control">Next</a>
+            <a href="#0" class="prev control">Prev</a>
+
+
+            <ul>
+                <li class="c"> Slide 1 </li>
+                <li class="r"> Slide 2 </li>
+                <li class="g"> Slide 3 </li>
+                <li class="b"> Slide 4 </li>
+            </ul>
+        </div>
+    </section>
+    <section>        
+        <div class="news">
+            <h2 class="tittle">Thông tin</h2>
+            <div class="newsList">
+                <div class="newsItem flex">
+                    <div class="newsImage"><img src="images/Thongtin.jpg" alt="infoimage"></div>
+                    <div class="newsContent">Tiêu đề của bài viết</div>
+                </div>
+                <div class="newsItem flex">
+                    <div class="newsImage"><img src="images/Thongtin.jpg" alt="infoimage"></div>
+                    <div class="newsContent">Tiêu đề của bài viết</div>
+                </div>
+                <div class="newsItem flex">
+                    <div class="newsImage"><img src="images/Thongtin.jpg" alt="infoimage"></div>
+                    <div class="newsContent">Tiêu đề của bài viết</div>
+                </div>
+                <div class="newsItem flex">
+                    <div class="newsImage"><img src="images/Thongtin.jpg" alt="infoimage"></div>
+                    <div class="newsContent">Tiêu đề của bài viết</div>
+                </div>
+            </div>
+            <div><a href="#">Xem thêm <i class="fa-solid fa-right-long"></i></a></div>
+        </div>
+    </section>
+    <section>
+        <div class="serviceUi">
+            <img src="images/service 1.jpeg" id="img" alt="serviceImg">
+            <div class="serviceMenu flex">
+                <!-- <div class="serviceItem"><img src="images/service items.jpeg" alt="serviceImg 1"></div>
+                <div class="serviceItem"><img src="images/service items 2.jpeg" alt="serviceImg 2 "></div>
+                <div class="serviceItem"><img src="images/service items 3.jpeg" alt="serviceImg 3"></div> -->
+                <a href="" id="img" src="images/service items.jpeg"></a>
+                <a href="" id="img" src="images/service items 2.jpeg"></a>
+                <a href="" id="img" src="images/service items 3.jpeg"></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <button onclick="scroll_to_top()">
+                <i class="fa-solid fa-angles-up"></i>
+            </button>
+            <div class="flex">
+                <img src="images/logo.png" alt="logo">
+                <div>Copyright <i class="fa-solid fa-copyright"></i> TuBank. All right reserved</div>
+            </div>
+        </div>
+        </footer>
+</body>
+
+</html>

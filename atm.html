@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/atm.css">
+    <script src="javascript/atm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body onload="init()">
+    <section>
+        <h1>Đăng kí thẻ ATM</h1>
+        <form class="info" id="myForm" onsubmit="return validate()">
+            <div class="flex">
+                <div class="left">
+                    <label for="fname">Nhập họ</label>
+                    <div><input type="text" id="fname" placeholder="Nhập họ"></div>
+                    <label for="name">Nhập tên</label>
+                    <div><input type="text" id="name" placeholder="Nhập tên"></div>
+                    <label for="birthday">Ngày sinh</label>
+                    <div class="birthday" id="birthday">
+                        <select name="bd" id="dateBD">
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                        </select>
+                        <select name="bd" id="monthBD">
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select>
+                        <select name="bd" id="year">
+                            <option value="">1976</option>
+                            <option value="">1977</option>
+                            <option value="">1978</option>
+                            <option value="">1979</option>
+                            <option value="">1980</option>
+                            <option value="">1981</option>
+                        </select>
+                    </div>
+                    <label for="idType">Loại thẻ căn cước</label>
+                    <div>
+                        
+                        <select name="idType" id="idType">
+                            <option value="">Giấy CMND</option>
+                            <option value="">Hộ chiếu</option>
+                        </select>
+                    </div>
+                    <label for="dateGot">Ngày cấp</label>
+                    <div id="dateGot">
+                        <select name="date" id="date">
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                        </select>
+                        <select name="date" id="date">
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                            <option value="">07</option>
+                            <option value="">08</option>
+                            <option value="">09</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select>
+                        <select name="date" id="date">
+                            <option value="">1976</option>
+                            <option value="">1977</option>
+                            <option value="">1978</option>
+                            <option value="">1979</option>
+                            <option value="">1980</option>
+                            <option value="">1981</option>
+                        </select>
+                    </div>
+                    <label for="status">Tình trạng hôn nhân</label>
+                    <div>
+                        
+                        <select name="status" id="status">
+                            <option value="single">Độc thân</option>
+                            <option value="maried">Đã kết hôn</option>
+                            <option value="divorced">Đã ly dị</option>
+                            <option value="alone">Ly thân</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="right">
+                    <label for="mname">Nhập tên đệm</label>
+                    <div><input type="text" id="mname" placeholder="Nhập họ đệm"></div>
+                    <label>Giới tính</label>
+                    <div class="gender">
+                        <label for="nam"> Nam</label>
+                        <input type="radio" name="gender" id="nam" value="Nam" checked>
+                        <label for="nu"> Nữ</label>
+                        <input type="radio" name="gender" id="nu" value="Nữ">
+                    </div>
+                    <label for="ntnlt">Quốc tịch</label>
+                     <div>
+                        <select name="nationality" id="ntnlt">
+                            <option value="">Việt Nam</option>
+                            <option value="">Philipines</option>
+                            <option value="">Indonesia</option>
+                            <option value="">Laos</option>
+                            <option value="">ThaiLand</option>
+                        </select>
+                     </div>
+                    <label for="idNumbers">Số CMT/Hộ chiếu</label>
+                    <div><input type="number" id="idNumbers"></div>
+                    <label for="placeGot">Nơi cấp</label>
+                    <div><input type="text" id="placeGot"></div>
+                </div>
+            </div>
+            <button type="reset" class="inputBtn">
+                <i class="fa-solid fa-rotate"></i>
+            </button>
+            <button type="submit" class="inputBtn" >
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </form>
+        <p id="error_para"></p>
+    </section>
+    <footer>
+        <div class="foot">
+            <button onclick="scroll_to_top()">
+                <i class="fa-solid fa-angles-up"></i>
+            </button>
+            <div class="flex">
+                <img src="images/logo.png" alt="logo">
+                <div>Copyright <i class="fa-solid fa-copyright"></i> TuBank. All right reserved</div>
+            </div>
+        </div>
+        </footer>
+</body>
+</html>

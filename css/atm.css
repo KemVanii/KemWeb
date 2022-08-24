@@ -1,0 +1,76 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gender, .gender input {
+    width: auto !important;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: lightblue;
+    background-color: darkblue;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+.info {
+    width: auto;
+    text-align: center;
+}
+.left, .right {
+    margin: 3rem;
+    text-align: left;
+    width: 100%;
+}
+label[for=nam], label[for=nu] {
+    background-color: white;
+}
+label {
+    background-color: lightblue;
+    padding: 0.3rem 100px 0.3rem 10px;
+    border-radius: 10px;
+}
+label + div {
+    margin: 1rem;
+}
+label + div > input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+.inputBtn {
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 15px;
+    width: 10rem;
+}
+button:hover {
+    background-color: darkblue;
+    color: white;
+}
+input[type=reset]:hover {
+    background-color: darkblue;
+    color: white;
+}
+footer {
+    margin-top: 5rem;
+    border-top: 2px lightblue;
+}
+div.foot {
+    text-align: center;
+}
+div.foot > div {
+    border-top: 2px lightblue solid;
+}
+div.foot > button {
+    border: 2px darkblue solid;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+div.foot > button:hover {
+    background-color: lightblue;
+    color: white;
+}

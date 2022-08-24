@@ -1,0 +1,136 @@
+.flex {
+    display: flex;
+}
+
+.lst {
+    list-style-type: none;
+}
+
+.image img {
+    width: 100%;
+    margin: auto;
+}
+.image > a {
+    padding: 1.5rem;
+}
+
+ul.service {
+    justify-content: space-between;
+}
+
+ul.service > li {
+    margin: auto;
+}
+
+ul.service > li > a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 0.8rem;
+    color: rgb(0, 81, 255);
+    transition: all 0.8s;
+    border-radius: 15px;
+}
+
+ul.service > li > a:hover {
+    color: white;
+    background-color: lightblue;
+}
+
+ul.search {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.search:first-child > a > i {
+    color: rgb(0, 81, 255);
+}
+
+.news {
+    margin: 3rem auto;
+    background-color: whitesmoke;
+}
+
+h2 {
+    margin: 0;
+    margin-top: 0;
+    color: rgb(66, 66, 66);
+    border-left: 5px solid rgb(0, 81, 255);
+    border-radius: 5px;
+}
+
+.news:last-child > div > a {
+    text-decoration: none;
+    color: rgb(0, 81, 255);
+}
+
+.newsList {
+    overflow: scroll;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+.newsItem {
+    margin: auto;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed lightblue;
+}
+
+.newsList::-webkit-scrollbar {
+    display: none;
+}
+
+.newsImage > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.newsContent {
+    margin-left: 1.5rem;
+}
+
+.serviceUI {
+    width: 50%;
+    margin: 5rem auto;
+}
+
+.serviceUI:first-child > img {
+    margin: auto;
+}
+
+.serviceUi {
+    width: 100%;
+    text-align: center;
+}
+
+.serviceMenu a {
+    background-color: lightblue;
+    display: block;
+    padding: 1.5rem 3rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 100%;
+    margin: 1rem auto;
+}
+footer {
+    margin-top: 5rem;
+    border-top: 2px lightblue;
+}
+div.foot {
+    text-align: center;
+}
+div.foot > div {
+    border-top: 2px lightblue solid;
+    justify-content: center;
+    align-items: center;
+}
+div.foot > button {
+    border: 2px darkblue solid;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: lightblue;
+}
+div.foot > button:hover {
+    background-color: lightblue;
+    color: white;
+}
